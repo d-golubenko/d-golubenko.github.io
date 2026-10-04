@@ -1,7 +1,7 @@
 :root { color-scheme: light; --paper: #fffdf0; --ink: #29352e; --accent: #263f78; --muted: #596354; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background-color: #dce1cf; background-image: linear-gradient(#a6b29c33 1px, transparent 1px), linear-gradient(90deg, #a6b29c33 1px, transparent 1px); background-size: 12px 12px; color: var(--ink); font: 17px/1.65 Georgia, 'Times New Roman', serif; }
+body { margin: 0; background-color: #dae5ed; background-image: linear-gradient(#bccdd9 1px, transparent 1px), linear-gradient(90deg, #bccdd9 1px, transparent 1px); background-size: 12px 12px; color: var(--ink); font: 17px/1.65 Georgia, 'Times New Roman', serif; }
 .layout { max-width: 1000px; margin: 44px auto; padding: 5px; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 5px; background: #c9cbbd; border: 2px solid; border-color: #fffff6 #737b6c #737b6c #fffff6; box-shadow: 6px 6px 0 #53604b33; }
 .window-title { grid-column: 1 / -1; padding: 5px 10px; color: #fffdf0; background: linear-gradient(90deg, #314b58, #6a7b68); font: bold 13px/1.6 'Courier New', monospace; display: flex; gap: 8px; }
 .window-title span { margin-left: auto; font-size: 11px; font-weight: normal; }
