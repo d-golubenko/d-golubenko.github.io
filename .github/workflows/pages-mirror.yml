@@ -1,0 +1,46 @@
+name: Publish GitHub Pages mirror
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+      - styles.css
+      - robots.txt
+      - sitemap.xml
+      - favicon.svg
+      - .github/workflows/pages-mirror.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-mirror
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - name: Prepare website assets
+        run: |
+          mkdir _site
+          cp ./*.html styles.css robots.txt sitemap.xml _site/
+          if [ -f favicon.svg ]; then cp favicon.svg _site/; fi
+          touch _site/.nojekyll
+          # Only static assets are published. Canonical URLs point to the main Cloudflare site.
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish mirror
+        id: deployment
+        uses: actions/deploy-pages@v4
