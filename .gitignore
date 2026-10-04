@@ -1,0 +1,20 @@
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Dependencies, local Cloudflare state, and credentials
+node_modules/
+.wrangler/
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# Original research documents and temporary archives
+*.docx
+*.zip
+*.log

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to measure chloride/sulfate membrane selectivity — Daniil Golubenko</title>
+  <meta name="description" content="How electrodialysis protocols affect chloride/sulfate selectivity: symmetric and asymmetric tests, analytical uncertainty, diffusion, stirring, current, and water transfer.">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "How to measure chloride/sulfate membrane selectivity",
+  "description": "How electrodialysis protocols affect chloride/sulfate selectivity: symmetric and asymmetric tests, analytical uncertainty, diffusion, stirring, current, and water transfer.",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Daniil Golubenko",
+    "sameAs": "https://orcid.org/0000-0001-6519-7463"
+  },
+  "about": {
+    "@type": "ScholarlyArticle",
+    "name": "On the analysis of monovalent-ion selectivity of anion-exchange membranes",
+    "identifier": "10.1016/j.desal.2023.117178",
+    "sameAs": "https://doi.org/10.1016/j.desal.2023.117178",
+    "datePublished": "2024",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Daniil V. Golubenko"
+      },
+      {
+        "@type": "Person",
+        "name": "Andrey D. Manin"
+      },
+      {
+        "@type": "Person",
+        "name": "L. Wu"
+      },
+      {
+        "@type": "Person",
+        "name": "T. Xu"
+      },
+      {
+        "@type": "Person",
+        "name": "Andrey B. Yaroslavtsev"
+      }
+    ],
+    "isPartOf": {
+      "@type": "Periodical",
+      "name": "Desalination"
+    }
+  }
+}
+</script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b5147'/%3E%3Cpath d='M7 9h8v15H7zM17 9h8v15h-8z' fill='%23fffdf7'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#study">Skip to content</a>
+  <div class="layout">
+    <div class="window-title">▧ academic homepage <span>personal web</span></div>
+    <header class="profile">
+      <h1>Daniil<br>Golubenko</h1>
+      <p class="affiliation">Ph.D. · Postdoctoral Fellow<br>The Chinese University of Hong Kong, Shenzhen<br>Shenzhen, China</p>
+      <nav aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About me</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Selected publications</a>
+        <a href="index.html#contact">Contact</a>
+
+        <div class="menu-page-link"><span class="menu-page-label">Separate page</span><a href="publications.html">All publications <span aria-hidden="true">→</span></a></div>
+      </nav>
+      <div class="badges" aria-label="About this site"><span>PERSONAL<br><strong>HOMEPAGE</strong></span><span>VIBE<br><strong>CODED</strong></span></div>
+      <p class="sidebar-note">A little corner of<br>the world wide web.</p>
+    </header>
+<main id="study"><p class="eyebrow">Research notes / Daniil V. Golubenko</p>
+<h2>How to measure chloride/sulfate membrane selectivity</h2><p><a href="index.html#research">← Research interests</a> · <a href="publications.html">All publications</a></p>
+<section aria-labelledby="overview"><h3 id="overview">Why the selectivity test matters</h3>
+<p>A chloride/sulfate selectivity coefficient is often used to compare anion-exchange membranes for electrodialysis. Our study shows that this coefficient depends strongly on the measurement protocol: the starting solutions, supporting electrolyte, equilibration, current density, stirring, and water transfer can all change the result.</p>
+<p>We compared commercial heterogeneous Ralex AM-PP with the same membrane modified by layer-by-layer (LbL) deposition of polyelectrolytes. Depending on current and solution conditions, the surface treatment improved chloride/sulfate selectivity by roughly 10–40%. Explaining these differences required separating ion migration from mutual diffusion and the effects of concentration polarization.</p>
+<p>The practical implication is that a fair comparison needs the same operating conditions and a reliable determination of both ion fluxes. The broader mechanisms of membrane selectivity are reviewed by <a href="https://doi.org/10.1016/j.memsci.2018.03.051">Luo, Abdu, and Wessling</a>, a source cited in the article.</p>
+</section>
+<section aria-labelledby="membrane"><h3 id="membrane">What the surface coating changed</h3>
+<p>The base membrane contains an anion-exchange polystyrene phase dispersed in polyethylene. We deposited six negatively charged poly(styrenesulfonate) (PSS) layers alternating with five positively charged poly(diallyldimethylammonium chloride) (PDADMAC) layers on one side. The negatively charged layers provide a barrier to anions, with stronger electrostatic exclusion of divalent sulfate than monovalent chloride.</p>
+<p>Infrared spectroscopy and surface elemental analysis confirmed the introduction of sulfonate-containing material. Bulk ion-exchange capacity and water uptake changed little: the supplementary data report IEC values of 2.08 and 2.01 mmol/g, and water uptake of 34.3% and 35.1%, for the original and coated membranes, respectively. The separation effect therefore comes primarily from the added surface barrier rather than a major change in the bulk membrane. The coating approach builds on the cited <a href="https://doi.org/10.1016/j.memsci.2019.02.018">LbL study by Ahmad and colleagues</a>.</p>
+</section>
+<section aria-labelledby="protocol"><h3 id="protocol">Symmetric and asymmetric measurements</h3>
+<p>Experiments used a six-compartment laboratory cell with an active membrane area of 4.9 cm². Additional compartments separated the test solutions from the electrode compartments. The diluate contained equimolar NaCl and Na₂SO₄, from 0.004 to 0.5 M of each salt; test compartments initially held 40 mL. Stirred experiments used approximately 500 rpm.</p>
+<p>In a <strong>symmetric test</strong>, the concentrate initially contained the same chloride/sulfate mixture as the diluate. Fluxes were inferred from relatively small changes in concentrations. In an <strong>asymmetric test</strong>, the concentrate initially contained a supporting salt, so transferred chloride and sulfate could be measured against a much smaller initial background. This improved analytical sensitivity but introduced additional ion exchange and mutual diffusion.</p>
+<p>The coefficient P(Cl/SO₄) is the chloride-to-sulfate molar flux ratio normalized by their concentration ratio on the diluate side: P = (J<sub>Cl</sub>/J<sub>SO₄</sub>)/(C<sub>Cl</sub>/C<sub>SO₄</sub>). Values above one indicate preferential chloride transport relative to the solution composition.</p>
+</section>
+<section aria-labelledby="accuracy"><h3 id="accuracy">Better analytical precision can change the transport being measured</h3>
+<div class="table-scroll"><table class="research-table"><caption>Example for unmodified Ralex AM-PP after preliminary desalination cycles</caption><thead><tr><th scope="col">Test</th><th scope="col">Diluate</th><th scope="col">Initial concentrate</th><th scope="col">Measured P(Cl/SO₄)</th></tr></thead><tbody><tr><th scope="row">Symmetric</th><td>20 mM NaCl + 20 mM Na₂SO₄</td><td>Same mixture</td><td>0.56 ± 0.04</td></tr><tr><th scope="row">Asymmetric</th><td>20 mM NaCl + 20 mM Na₂SO₄</td><td>40 mM NaNO₃</td><td>0.82 ± 0.01</td></tr></tbody></table></div><p>Both examples used 0.82 mA/cm². In the symmetric test, a 60-minute measurement gave an acceptable uncertainty while keeping desalination near 10%, limiting changes in diluate composition. In the asymmetric test, the paper reports relative uncertainty of approximately 1–2%.</p>
+<p>The higher asymmetric coefficient reflects a change in ion transport as well as improved precision. The supporting anion exchanges with chloride and sulfate in the membrane, establishing concentration gradients and diffusion fluxes alongside electrical migration. Diffusion contributes proportionally more to chloride transport, increasing the apparent preference for chloride.</p>
+<p>For highly chloride-selective membranes, the small sulfate concentration change makes a symmetric test especially difficult. The paper estimates relative errors of about 30% and 60% for coefficients of 10 and 20 under the examined protocol. Asymmetric measurements can resolve much larger coefficients, with the attainable range governed by analytical detection limits and salt purity.</p>
+</section>
+<section aria-labelledby="equilibration"><h3 id="equilibration">Supporting electrolyte and equilibration affect the result</h3>
+<p>Nitrate, bicarbonate, fluoride, and acetate were tested as supporting anions. They differed in their affinity for the membrane and in the chloride and sulfate fluxes they induced. Acetate produced a higher chloride/sulfate diffusion selectivity than nitrate. The supporting salt is therefore part of the separation experiment and needs to be reported when comparing membranes.</p>
+<p>Asymmetric tests required about two to three repeated desalination cycles to reach stable coefficients. Initially, the new supporting anion displaced ions retained during membrane pre-equilibration, temporarily increasing chloride release and the calculated selectivity. Symmetric tests reached values close to steady state much earlier because they did not introduce a new anion.</p>
+</section>
+<section aria-labelledby="concentration"><h3 id="concentration">Concentration and water transfer change the interpretation</h3>
+<p>In symmetric tests, increasing the concentration from 0.004 to 0.5 M of each salt raised P(Cl/SO₄) from roughly 0.3–0.5 to 5–6. Both declining sulfate activity relative to chloride and weaker electroselectivity contribute. Even after normalization using ion activities, the original membrane's coefficient increased from 0.22 to 0.51, so nonideal solution behavior explains only part of the trend.</p>
+<p>The relative benefit of the coating decreased at intermediate concentration, consistent with screening of electrostatic exclusion. At the highest concentration it increased again. The paper proposes osmotic dehydration and contraction of the polyelectrolyte coating, which could strengthen size-based discrimination; this is a mechanistic interpretation rather than a directly measured change in coating dimensions.</p>
+<p>At high salt concentration, electroosmosis noticeably changed the compartment volumes. Correcting the symmetric calculation for water transfer changed the coefficient by tens of percent at 0.5 M of each salt. Flux calculations require the change in ion amount, including volume changes, rather than concentration changes alone. Asymmetric selectivity ratios were much less sensitive to this volume effect.</p>
+</section>
+<section aria-labelledby="current"><h3 id="current">Stirring determines whether the coating controls separation</h3>
+<div class="table-scroll"><table class="research-table"><caption>Reported change in selectivity across the studied current range with intensive stirring</caption><thead><tr><th scope="col">Membrane</th><th scope="col">P at lower current</th><th scope="col">P at higher current</th></tr></thead><tbody><tr><th scope="row">Original Ralex</th><td>0.58</td><td>0.64</td></tr><tr><th scope="row">LbL-coated Ralex</th><td>0.64</td><td>0.88</td></tr></tbody></table></div><p>With stirring, the relative coating benefit rose from about 10% to 38% as current increased. The interpretation is that depletion within the selective coating increases its contribution to transport resistance, allowing its discrimination between chloride and sulfate to become more influential.</p>
+<p>Without stirring, the original and coated membranes showed essentially the same selectivity behavior. The depleted solution boundary layer controlled transport and masked the membrane modification. The observed limiting current without stirring was approximately 8.5 mA/cm². This connection between current, boundary layers, and membrane selectivity is discussed in the cited <a href="https://doi.org/10.3390/ijms23094711">bilayer-membrane model by Gorobchenko and colleagues</a>.</p>
+</section>
+<section aria-labelledby="model"><h3 id="model">How modelling supported the interpretation</h3>
+<p>A one-dimensional COMSOL model coupled Nernst–Planck ion transport with electrostatics. It represented the base membrane, alternating charged coating layers, and adjacent diffusion boundary layers. Separate diffusion experiments supported the role of mutual diffusion in asymmetric tests. The calculations explained why supporting salts change the measured coefficient and why stirring reveals the coating's effect.</p>
+<p>The model used idealized coating layers and boundary-layer thicknesses chosen to match limiting-current behavior; ion activities were not explicitly included. The concentration dependence and proposed dehydration mechanism should therefore be read together with the experimental evidence.</p>
+</section>
+<section aria-labelledby="publication"><h3 id="publication">Related publication</h3>
+<p>Golubenko D.V.; Manin A.D.; Wu L.; Xu T.; Yaroslavtsev A.B. (573, 117178). <cite>On the analysis of monovalent-ion selectivity of anion-exchange membranes.</cite> Desalination, 2024. <a href="https://doi.org/10.1016/j.desal.2023.117178">Read the paper via DOI</a></p>
+</section>
+<footer>Daniil Golubenko · <a href="index.html">Home</a> · <a href="#study">Back to top ↑</a></footer></main></div></body></html>
