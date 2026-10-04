@@ -1,0 +1,63 @@
+name: Archive bot visits
+
+on:
+  schedule:
+    # 09:17 Asia/Shanghai. GitHub may delay scheduled jobs.
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+    inputs:
+      include_today:
+        description: 'Also save today as a partial day (for the first run)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bot-visits-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check archive credentials
+        id: credentials
+        env:
+          CLOUDFLARE_LOGS_TOKEN: ${{ secrets.CLOUDFLARE_LOGS_TOKEN }}
+        run: |
+          if [ -n "$CLOUDFLARE_LOGS_TOKEN" ]; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo '::warning::Archive is not active: add CLOUDFLARE_LOGS_TOKEN in repository Actions secrets.'
+          fi
+      - name: Query retained logs and rebuild daily totals
+        if: steps.credentials.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_LOGS_TOKEN: ${{ secrets.CLOUDFLARE_LOGS_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: '01420cf3f4801b9291a619fe6cb27e26'
+          INCLUDE_TODAY: ${{ inputs.include_today }}
+        run: |
+          if [ "$INCLUDE_TODAY" = 'true' ]; then
+            python3 scripts/archive_bot_visits.py --include-today
+          else
+            python3 scripts/archive_bot_visits.py
+          fi
+      - name: Commit daily archive
+        if: steps.credentials.outputs.ready == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add analytics/
+          if git diff --cached --quiet; then
+            echo 'Daily totals unchanged.'
+          else
+            git commit -m 'Archive daily bot visits'
+            # Preserve concurrent site edits. The concurrency group prevents competing archive jobs.
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
