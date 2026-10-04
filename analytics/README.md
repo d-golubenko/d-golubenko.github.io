@@ -1,7 +1,11 @@
 # Bot visits archive
 
-Daily archive is prepared but not active until the repository secret `CLOUDFLARE_LOGS_TOKEN` is configured and the first run succeeds.
+Private daily totals, timezone **Asia/Shanghai**.
 
-The workflow runs daily around 09:17 Asia/Shanghai, recalculates the preceding two calendar days, and retains older daily CSV files. Repeated runs replace the same day's totals; they do not add duplicate visits. GitHub may delay scheduled runs.
+[Download all daily rows](all-days.csv) · [Daily CSV files](daily) · [Coverage notes](coverage)
 
-Files in this directory are private and excluded from published website assets. They remain available in repository history after Cloudflare's short-lived logs expire. A gap longer than log retention cannot be recovered.
+| Category | Agent | Logged page visits |
+|---|---|---:|
+| other_bot | other_bot | 15 |
+
+Counts represent successful GET requests for HTML pages, not unique users. Bot names are self-reported User-Agent hints. The first day includes setup/testing traffic. Cloudflare log sampling or dropped logs can reduce observed counts. A bot request does not prove indexing or citation.

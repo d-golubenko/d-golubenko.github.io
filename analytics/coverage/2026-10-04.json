@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-04",
+  "timezone": "Asia/Shanghai",
+  "status": "partial",
+  "source": "retained_workers_logs",
+  "logged_page_visits": 15,
+  "note": "Observed log records; not unique visitors or independently verified bot identities."
+}
