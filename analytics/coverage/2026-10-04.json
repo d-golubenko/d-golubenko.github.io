@@ -3,6 +3,6 @@
   "timezone": "Asia/Shanghai",
   "status": "partial",
   "source": "retained_workers_logs",
-  "logged_page_visits": 15,
+  "logged_page_visits": 17,
   "note": "Observed log records; not unique visitors or independently verified bot identities."
 }
