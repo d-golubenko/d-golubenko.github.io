@@ -4,7 +4,7 @@
 
 ## Обновление сайта
 
-Cloudflare Workers Builds подключён к приватному репозиторию dgolubenko99/academic-homepage. Изменения в ветке main автоматически публикуются. Команда публикации: `npx wrangler deploy`. Отдельная сборка не нужна.
+Cloudflare Workers Builds подключён к приватному репозиторию d-golubenko/academic-homepage. Изменения в ветке main автоматически публикуются. Команда публикации: `npx wrangler deploy`. Отдельная сборка не нужна.
 
 Можно менять содержание через Codex или через GitHub: открыть файл → Edit → Commit changes. Локальное сохранение в Блокноте само по себе не обновляет GitHub.
 
