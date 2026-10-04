@@ -25,7 +25,7 @@ def day_bounds(day):
 
 def query_body(start, end, cursor=None):
     filters = [
-        {'key': '$workers.scriptName', 'operation': 'eq', 'type': 'string', 'value': 'dgolubenko'},
+        {'key': '$workers.scriptName', 'operation': 'in', 'type': 'string', 'value': 'me,dgolubenko'},
         {'key': 'event', 'operation': 'eq', 'type': 'string', 'value': 'site_visit'},
         {'key': 'method', 'operation': 'eq', 'type': 'string', 'value': 'GET'},
         {'key': 'status', 'operation': 'eq', 'type': 'number', 'value': 200},

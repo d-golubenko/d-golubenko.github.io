@@ -1,6 +1,6 @@
 # Academic homepage — Daniil Golubenko
 
-Сайт: https://dgolubenko.d-golubenko31.workers.dev/
+Сайт: https://me.d-golubenko.workers.dev/
 
 ## Обновление сайта
 
@@ -10,8 +10,8 @@ Cloudflare Workers Builds подключён к приватному репоз�
 
 ## Статистика
 
-- Браузерные посещения, страницы и источники: Cloudflare → Observability → Analytics → Web analytics → dgolubenko.d-golubenko31.workers.dev.
-- Запросы ботов: Workers & Pages → dgolubenko → Observability. Фильтр `event = site_visit`, затем `category = ai_bot` или по полю `agent`. Метрики Workers включают все запросы, в том числе CSS и перенаправления; для просмотров страниц фильтруйте `content_type = text/html`, `method = GET`, `status = 200`.
+- Браузерные посещения, страницы и источники: Cloudflare → Observability → Analytics → Web analytics → me.d-golubenko.workers.dev.
+- Запросы ботов: Workers & Pages → me → Observability. Фильтр `event = site_visit`, затем `category = ai_bot` или по полю `agent`. Метрики Workers включают все запросы, в том числе CSS и перенаправления; для просмотров страниц фильтруйте `content_type = text/html`, `method = GET`, `status = 200`.
 - Категория определяется по User-Agent, который можно подделать. `browser_or_unknown` не гарантирует, что это человек. Посещение ботом не доказывает индексирование или цитирование в ответе LLM.
 - На бесплатном плане журналы сейчас хранятся 3 дня, до 200 000 записей в сутки. Лимит Workers Free — 100 000 запросов в сутки; запросы через worker.js учитываются в нём.
 
