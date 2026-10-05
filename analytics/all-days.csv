@@ -1,9 +1,10 @@
 date,category,agent,path,visits
 2026-10-04,ai_bot,chatgpt-user,/,1
-2026-10-04,other_bot,other_bot,/,5
-2026-10-04,other_bot,other_bot,/acid-recovery,2
-2026-10-04,other_bot,other_bot,/pei-brine-mining,2
-2026-10-04,other_bot,other_bot,/publications,2
-2026-10-04,other_bot,other_bot,/reverse-electrodialysis,2
-2026-10-04,other_bot,other_bot,/selective-ion-transport,1
-2026-10-04,other_bot,other_bot,/selectivity-measurement,2
+2026-10-04,other_bot,other_bot,/,15
+2026-10-04,other_bot,other_bot,/acid-recovery,6
+2026-10-04,other_bot,other_bot,/pei-brine-mining,5
+2026-10-04,other_bot,other_bot,/publications,4
+2026-10-04,other_bot,other_bot,/reverse-electrodialysis,5
+2026-10-04,other_bot,other_bot,/selective-ion-transport,3
+2026-10-04,other_bot,other_bot,/selectivity-measurement,5
+2026-10-04,search_bot,googlebot,/,1
