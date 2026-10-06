@@ -8,3 +8,5 @@ date,category,agent,path,visits
 2026-10-04,other_bot,other_bot,/selective-ion-transport,3
 2026-10-04,other_bot,other_bot,/selectivity-measurement,5
 2026-10-04,search_bot,googlebot,/,1
+2026-10-05,other_bot,other_bot,/,1
+2026-10-05,search_bot,duckduckbot,/,3
