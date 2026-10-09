@@ -8,7 +8,7 @@ Daily totals, timezone **Asia/Shanghai**.
 |---|---|---:|
 | ai_bot | chatgpt-user | 1 |
 | other_bot | other_bot | 47 |
-| search_bot | duckduckbot | 7 |
+| search_bot | duckduckbot | 8 |
 | search_bot | googlebot | 1 |
 
 Counts represent successful GET requests for HTML pages, not unique users. Bot names are self-reported User-Agent hints. The first day includes setup/testing traffic. Cloudflare log sampling or dropped logs can reduce observed counts. A bot request does not prove indexing or citation.
