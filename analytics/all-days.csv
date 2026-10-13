@@ -20,3 +20,7 @@ date,category,agent,path,visits
 2026-10-10,ai_bot,chatgpt-user,/reverse-electrodialysis,1
 2026-10-10,ai_bot,chatgpt-user,/selective-ion-transport,1
 2026-10-10,ai_bot,chatgpt-user,/selectivity-measurement,1
+2026-10-12,search_bot,bingbot,/,1
+2026-10-12,search_bot,bingbot,/pei-brine-mining,2
+2026-10-12,search_bot,bingbot,/reverse-electrodialysis,2
+2026-10-12,search_bot,bingbot,/selectivity-measurement,2
