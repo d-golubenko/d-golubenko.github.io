@@ -8,7 +8,7 @@ Daily totals, timezone **Asia/Shanghai**.
 |---|---|---:|
 | ai_bot | chatgpt-user | 7 |
 | other_bot | other_bot | 51 |
-| search_bot | bingbot | 8 |
+| search_bot | bingbot | 9 |
 | search_bot | duckduckbot | 9 |
 | search_bot | googlebot | 1 |
 
