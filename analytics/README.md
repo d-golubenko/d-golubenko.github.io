@@ -7,7 +7,7 @@ Daily totals, timezone **Asia/Shanghai**.
 | Category | Agent | Logged page visits |
 |---|---|---:|
 | ai_bot | chatgpt-user | 7 |
-| other_bot | other_bot | 52 |
+| other_bot | other_bot | 60 |
 | search_bot | bingbot | 12 |
 | search_bot | duckduckbot | 9 |
 | search_bot | googlebot | 1 |
