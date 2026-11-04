@@ -36,3 +36,6 @@ date,category,agent,path,visits
 2026-10-31,search_bot,bingbot,/,1
 2026-11-01,other_bot,other_bot,/,1
 2026-11-02,other_bot,other_bot,/,8
+2026-11-03,ai_bot,perplexitybot,/,1
+2026-11-03,other_bot,other_bot,/,2
+2026-11-03,search_bot,bingbot,/selectivity-measurement,1
