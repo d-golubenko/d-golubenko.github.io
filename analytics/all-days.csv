@@ -52,3 +52,5 @@ date,category,agent,path,visits
 2026-11-11,search_bot,bingbot,/publications,1
 2026-11-13,other_bot,other_bot,/,1
 2026-11-15,other_bot,other_bot,/,1
+2026-11-16,other_bot,other_bot,/,1
+2026-11-16,search_bot,bingbot,/reverse-electrodialysis,1
